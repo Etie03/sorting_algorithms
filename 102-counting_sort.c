@@ -34,13 +34,13 @@ void counting_sort(int *array, size_t size)
 	for (g = 0; g <= max; ++g)
 		count[g] = 0;
 	for (g = 0; g < (int) size; ++g)
-		count[array[i]]++;
+		count[array[g]]++;
 	for (g = 1; g <= max; ++g)
 		count[g] = count[g - 1] + count[g];
 	print_array(count, max + 1);
 	for (g = 0; g < (int) size; ++g)
 	{
-		arr_tmp[count[array[i]] - 1] = array[i];
+		arr_tmp[count[array[g]] - 1] = array[g];
 		count[array[g]]--;
 	}
 	for (g = 0; g < (int) size; ++g)
