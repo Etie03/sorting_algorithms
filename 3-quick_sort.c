@@ -47,7 +47,7 @@ void lomuto_quicksort(int *array, int low, int high, size_t size)
 
 	if (low < high)
 	{
-		m = partition(array, low, high, size);
+		m = lom_partition(array, low, high, size);
 		lomuto_quicksort(array, low, m - 1, size);
 		lomuto_quicksort(array, m + 1, high, size);
 	}
