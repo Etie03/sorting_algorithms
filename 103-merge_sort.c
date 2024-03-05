@@ -1,7 +1,7 @@
 include "sort.h"
 /**
  * merger_sort - initiate merge sort
- * @array: array 
+ * @array: array
  * @temp: temporary array
  * @size: size of the array
  */
